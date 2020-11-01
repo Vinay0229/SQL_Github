@@ -1,0 +1,29 @@
+ 
+ 
+ TRUNCATE TABLE [dbo].[EMP_SOURCE]
+ 
+
+ TRUNCATE TABLE [dbo].[EMP_TARGET]
+ 
+
+ UPDATE [dbo].[EMP_SOURCE]
+ SET SALARY=900
+ WHERE ID=2
+ 
+  INSERT INTO [dbo].[EMP_SOURCE] (ID,NAME,SALARY) VALUES (5,'E',600);
+ 
+ 
+ 
+ 
+ INSERT INTO [dbo].[EMP_SOURCE] (ID,NAME,SALARY) VALUES (1,'A',100);
+ INSERT INTO [dbo].[EMP_SOURCE] (ID,NAME,SALARY) VALUES (2,'B',200);
+ INSERT INTO [dbo].[EMP_SOURCE] (ID,NAME,SALARY) VALUES (3,'C',300);
+ INSERT INTO [dbo].[EMP_SOURCE] (ID,NAME,SALARY) VALUES (4,'D',400);
+
+
+
+--------------------------------------------------------------------------------
+
+SELECT * FROM [dbo].[EMP_SOURCE]
+
+SELECT * FROM [dbo].[EMP_TARGET]
